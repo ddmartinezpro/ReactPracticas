@@ -3,6 +3,10 @@ import PropTypes from 'prop-types'
 
 const PrimeraApp = ({saludo, despedida = 'Adios'}) => {
 
+    const XDR = 1;
+
+    console.log(XDR);
+
     const mensajePrincipal = 'Hola mundo';
     const mensajeSecundario = 'Este es un proyecto de prueba';
 
