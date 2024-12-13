@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en CounterApp Debe coincidir con el snap y tener por default el contador en 10 1`] = `
+<div>
+  <h1>
+    Counter App
+  </h1>
+  <h2>
+    10
+  </h2>
+  <span>
+    Se puede incrementar o decrementar
+  </span>
+  <br />
+  <button>
+    Incrementar
+  </button>
+  <button>
+    Reset
+  </button>
+  <button>
+    Decrementar
+  </button>
+</div>
+`;
+
+exports[`Pruebas en CounterApp Si se manda 3 y se aumenta en 1 se debe mostrar 4 1`] = `
+<div>
+  <h1>
+    Counter App
+  </h1>
+  <h2>
+    4
+  </h2>
+  <span>
+    Se puede incrementar o decrementar
+  </span>
+  <br />
+  <button>
+    Incrementar
+  </button>
+  <button>
+    Reset
+  </button>
+  <button>
+    Decrementar
+  </button>
+</div>
+`;

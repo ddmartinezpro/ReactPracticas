@@ -36,14 +36,15 @@ import React from 'react';
 import {createRoot} from "react-dom/client";
 
 import './index.css';
-import CounterApp from "./CounterApp";
+import GifApp from "./components/gifApp/GifApp";
 
 const divRoot = document.querySelector('#root');
 
 const root = createRoot(divRoot);
 
 // root.render(<PrimeraApp saludo="Esto es un saludo" />);
-root.render(<CounterApp value={3} />);
+// root.render(<CounterApp value={3} />);
+root.render(<GifApp />);
 
 
 

@@ -4,6 +4,7 @@ body {
     font-family: Helvetica, sans-serif;
     font-size: 17px;
     padding: 30px;
+    overflow-x: hidden;
 }
 
 button {
@@ -15,4 +16,78 @@ button {
     &:hover {
         background-color: aquamarine;
     }
+}
+
+input {
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 12px;
+    padding: 5px;
+}
+
+.gif-section {
+    width: 100%;
+    margin: 25px;
+
+    .gif-imgs-cointainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: start;
+        align-items: center;
+        max-width: 100%;
+        margin: 0 9vw;
+
+        div:not(.hover-area) {
+            position: relative;
+            height: 200px;
+            width: 200px;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 1px 1px 4px 0 #979797;
+            transition: all .2s;
+        }
+
+        div.hover-area {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            cursor: pointer;
+
+            &:hover {
+                z-index: 100;
+                + img {
+                    scale: 1.2;
+                    z-index: 50;
+                    position: absolute;
+                    width: 480px;
+                    transition: all .2s;
+                }
+            }
+        }
+    }
+
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.fade-in {
+    animation-name: fadeIn;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
 }
